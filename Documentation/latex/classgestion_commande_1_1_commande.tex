@@ -1,0 +1,138 @@
+\hypertarget{classgestion_commande_1_1_commande}{\section{gestion\-Commande.\-Commande Class Reference}
+\label{classgestion_commande_1_1_commande}\index{gestion\-Commande.\-Commande@{gestion\-Commande.\-Commande}}
+}
+Inheritance diagram for gestion\-Commande.\-Commande\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgestion_commande_1_1_commande}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgestion_commande_1_1_commande_a05c95335b8ffd8af844cfd45706a525f}{Commande} (int num, \hyperlink{classgestion_commande_1_1_client}{Client} cli, \hyperlink{classgestion_commande_1_1_article}{Article} art)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe commande. \end{DoxyCompactList}\item 
+void \hyperlink{classgestion_commande_1_1_commande_a28e22a23c75689f346b8d130e3f326eb}{afficher\-Commande} ()
+\begin{DoxyCompactList}\small\item\em Methode permettant d'afficher la commande. \end{DoxyCompactList}\item 
+int \hyperlink{classgestion_commande_1_1_commande_ad7592dce621f208b4929c6f7baf28aa6}{get\-Num} ()
+\begin{DoxyCompactList}\small\item\em Methode permettant de recuperer le numero de commande. \end{DoxyCompactList}\item 
+\hyperlink{classgestion_commande_1_1_client}{Client} \hyperlink{classgestion_commande_1_1_commande_aeaa08b1cafcdb48bcc6f70066a949f23}{get\-Client} ()
+\begin{DoxyCompactList}\small\item\em Methode permettant de recuperer le client de la commande. \end{DoxyCompactList}\item 
+\hyperlink{classgestion_commande_1_1_article}{Article} \hyperlink{classgestion_commande_1_1_commande_a5bc20e7184b4d85e5fbbcbbe05c5aa4e}{get\-Article} ()
+\begin{DoxyCompactList}\small\item\em Methode permettant de recuperer l'article de la commande. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+La classe \hyperlink{classgestion_commande_1_1_commande}{Commande} sert a instancier de nouvelles commandes. Les commandes sont renseignes par leur numero unique, leur client et l'article commandee par ce client. La classe \hyperlink{classgestion_commande_1_1_commande}{Commande} implemente l'interface Serializable. \begin{DoxyAuthor}{Author}
+Rouinsard 
+\end{DoxyAuthor}
+
+
+Definition at line 11 of file Commande.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgestion_commande_1_1_commande_a05c95335b8ffd8af844cfd45706a525f}{\index{gestion\-Commande\-::\-Commande@{gestion\-Commande\-::\-Commande}!Commande@{Commande}}
+\index{Commande@{Commande}!gestionCommande::Commande@{gestion\-Commande\-::\-Commande}}
+\subsubsection[{Commande}]{\setlength{\rightskip}{0pt plus 5cm}gestion\-Commande.\-Commande.\-Commande (
+\begin{DoxyParamCaption}
+\item[{int}]{num, }
+\item[{{\bf Client}}]{cli, }
+\item[{{\bf Article}}]{art}
+\end{DoxyParamCaption}
+)}}\label{classgestion_commande_1_1_commande_a05c95335b8ffd8af844cfd45706a525f}
+
+
+Constructeur de la classe commande. 
+
+Le constructeur de la classe commande prenant en parametre un numero d'id, un client et un article. 
+\begin{DoxyParams}{Parameters}
+{\em num} & Un numero de commande unique. \\
+\hline
+{\em cli} & Le client effectuant la commande. \\
+\hline
+{\em art} & L'article commandee par le client. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file Commande.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classgestion_commande_1_1_commande_a28e22a23c75689f346b8d130e3f326eb}{\index{gestion\-Commande\-::\-Commande@{gestion\-Commande\-::\-Commande}!afficher\-Commande@{afficher\-Commande}}
+\index{afficher\-Commande@{afficher\-Commande}!gestionCommande::Commande@{gestion\-Commande\-::\-Commande}}
+\subsubsection[{afficher\-Commande}]{\setlength{\rightskip}{0pt plus 5cm}void gestion\-Commande.\-Commande.\-afficher\-Commande (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgestion_commande_1_1_commande_a28e22a23c75689f346b8d130e3f326eb}
+
+
+Methode permettant d'afficher la commande. 
+
+Cette methode affiche le numero unique de la commande, puis recupere le nom du client grace a la methode ge\-Nom() de la classe \hyperlink{classgestion_commande_1_1_client}{Client}, ainsi que le nom de l'article et le prix a l'unite de celui-\/ci via les methodes get\-Nom\-Article() et get\-Prix\-Uniraite() de la classe \hyperlink{classgestion_commande_1_1_article}{Article}. 
+
+Definition at line 31 of file Commande.\-java.
+
+\hypertarget{classgestion_commande_1_1_commande_a5bc20e7184b4d85e5fbbcbbe05c5aa4e}{\index{gestion\-Commande\-::\-Commande@{gestion\-Commande\-::\-Commande}!get\-Article@{get\-Article}}
+\index{get\-Article@{get\-Article}!gestionCommande::Commande@{gestion\-Commande\-::\-Commande}}
+\subsubsection[{get\-Article}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Article} gestion\-Commande.\-Commande.\-get\-Article (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgestion_commande_1_1_commande_a5bc20e7184b4d85e5fbbcbbe05c5aa4e}
+
+
+Methode permettant de recuperer l'article de la commande. 
+
+\begin{DoxyReturn}{Returns}
+this.\-larticle Correspond a l'article de la commande. 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file Commande.\-java.
+
+\hypertarget{classgestion_commande_1_1_commande_aeaa08b1cafcdb48bcc6f70066a949f23}{\index{gestion\-Commande\-::\-Commande@{gestion\-Commande\-::\-Commande}!get\-Client@{get\-Client}}
+\index{get\-Client@{get\-Client}!gestionCommande::Commande@{gestion\-Commande\-::\-Commande}}
+\subsubsection[{get\-Client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Client} gestion\-Commande.\-Commande.\-get\-Client (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgestion_commande_1_1_commande_aeaa08b1cafcdb48bcc6f70066a949f23}
+
+
+Methode permettant de recuperer le client de la commande. 
+
+\begin{DoxyReturn}{Returns}
+this.\-le\-Client Correspond au client de la commande. 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file Commande.\-java.
+
+\hypertarget{classgestion_commande_1_1_commande_ad7592dce621f208b4929c6f7baf28aa6}{\index{gestion\-Commande\-::\-Commande@{gestion\-Commande\-::\-Commande}!get\-Num@{get\-Num}}
+\index{get\-Num@{get\-Num}!gestionCommande::Commande@{gestion\-Commande\-::\-Commande}}
+\subsubsection[{get\-Num}]{\setlength{\rightskip}{0pt plus 5cm}int gestion\-Commande.\-Commande.\-get\-Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgestion_commande_1_1_commande_ad7592dce621f208b4929c6f7baf28aa6}
+
+
+Methode permettant de recuperer le numero de commande. 
+
+\begin{DoxyReturn}{Returns}
+this.\-num\-Cde Correspond au numero de la commande. 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file Commande.\-java.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Rouinsard/\-Java/\-Gestion de commandes/src/gestion\-Commande/\hyperlink{_commande_8java}{Commande.\-java}\end{DoxyCompactItemize}
