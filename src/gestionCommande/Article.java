@@ -19,7 +19,7 @@ public class Article implements Serializable{
 		this.nomArticle = Lire.S();
 		System.out.println("le prix unitaire de cet article : ");
 		this.prixUnitaire = Lire.f();
-		System.out.println("la quantité en stock de l'article :");
+		System.out.println("la quantitée en stock de l'article :");
 		this.qteStock = Lire.i();
 	}
 	
@@ -35,7 +35,14 @@ public class Article implements Serializable{
 	 */
 	public void saisirPrixUnitaire(){
 		System.out.println("Saisir le nouveau prix unitaire de l'article : ");
-		this.prixUnitaire = Lire.i();
+		this.prixUnitaire = Lire.f();
+	}
+	
+	/** \brief Methode permettant de saisir la quantitee en stock de l'article.
+	 */
+	public void saisirQuantite(){
+		System.out.println("Saisir la nouvelle quantitée en stock de l'article : ");
+		this.qteStock = Lire.i();
 	}
 	
 	/** \brief Methode permettant de recuperer le nom de l'article.
@@ -57,5 +64,12 @@ public class Article implements Serializable{
 	 */
 	public int getStock(){
 		return this.qteStock;
+	}
+	
+	/**  \brief Methode permettant de modifier la quantite en stock de l'article.
+	 * @param stock		Correspond au stock a retirer.
+	 */
+	public void changeStock(int stock){
+		this.qteStock = this.qteStock - stock;
 	}
 }

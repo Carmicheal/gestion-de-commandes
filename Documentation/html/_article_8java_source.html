@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('_article_8java_source.html','');});
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        this.nomArticle = <a class="code" href="classgestion_commande_1_1_lire.html">Lire</a>.<a class="code" href="classgestion_commande_1_1_lire.html#a80bc00afc8ee00cdf98d844099184e16">S</a>();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        System.out.println(<span class="stringliteral">&quot;le prix unitaire de cet article : &quot;</span>);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        this.prixUnitaire = <a class="code" href="classgestion_commande_1_1_lire.html">Lire</a>.<a class="code" href="classgestion_commande_1_1_lire.html#a007ba2d3004f27d3040f409074aab7f8">f</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        System.out.println(<span class="stringliteral">&quot;la quantité en stock de l&#39;article :&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        System.out.println(<span class="stringliteral">&quot;la quantitée en stock de l&#39;article :&quot;</span>);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        this.qteStock = <a class="code" href="classgestion_commande_1_1_lire.html">Lire</a>.<a class="code" href="classgestion_commande_1_1_lire.html#a4c849f256ceef5c7d7f025bf7870fea6">i</a>();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
@@ -126,28 +126,37 @@ $(document).ready(function(){initNavTree('_article_8java_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="classgestion_commande_1_1_article.html#aba22b733dd82931721613a0e4338ab9f">   36</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classgestion_commande_1_1_article.html#aba22b733dd82931721613a0e4338ab9f" title="Methode permettant de saisir le prix a l&#39;unite.">saisirPrixUnitaire</a>(){</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        System.out.println(<span class="stringliteral">&quot;Saisir le nouveau prix unitaire de l&#39;article : &quot;</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        this.prixUnitaire = <a class="code" href="classgestion_commande_1_1_lire.html">Lire</a>.<a class="code" href="classgestion_commande_1_1_lire.html#a4c849f256ceef5c7d7f025bf7870fea6">i</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        this.prixUnitaire = <a class="code" href="classgestion_commande_1_1_lire.html">Lire</a>.<a class="code" href="classgestion_commande_1_1_lire.html#a007ba2d3004f27d3040f409074aab7f8">f</a>();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="classgestion_commande_1_1_article.html#a6206b8fb5eb14b54eefb9cd48ed50ac1">   44</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classgestion_commande_1_1_article.html#a6206b8fb5eb14b54eefb9cd48ed50ac1" title="Methode permettant de recuperer le nom de l&#39;article.">getNomArticle</a>(){</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> this.nomArticle;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="classgestion_commande_1_1_article.html#a51ce07f2587d767cf8d88bdd5fcbcf4f">   43</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classgestion_commande_1_1_article.html#a51ce07f2587d767cf8d88bdd5fcbcf4f" title="Methode permettant de saisir la quantitee en stock de l&#39;article.">saisirQuantite</a>(){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        System.out.println(<span class="stringliteral">&quot;Saisir la nouvelle quantitée en stock de l&#39;article : &quot;</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        this.qteStock = <a class="code" href="classgestion_commande_1_1_lire.html">Lire</a>.<a class="code" href="classgestion_commande_1_1_lire.html#a4c849f256ceef5c7d7f025bf7870fea6">i</a>();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="classgestion_commande_1_1_article.html#a67b9ca3be955dd04c9aa3707b65b43c7">   51</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="classgestion_commande_1_1_article.html#a67b9ca3be955dd04c9aa3707b65b43c7" title="Methode permettant de recuperer le prix unitaire de l&#39;article.">getPrixUnitaire</a>(){</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> this.prixUnitaire;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="classgestion_commande_1_1_article.html#a6206b8fb5eb14b54eefb9cd48ed50ac1">   51</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classgestion_commande_1_1_article.html#a6206b8fb5eb14b54eefb9cd48ed50ac1" title="Methode permettant de recuperer le nom de l&#39;article.">getNomArticle</a>(){</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> this.nomArticle;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="classgestion_commande_1_1_article.html#a45aef0c035bb11c4be39787f2c9089cd">   58</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classgestion_commande_1_1_article.html#a45aef0c035bb11c4be39787f2c9089cd" title="Methode permettant de recuperer la quantite en stock de l&#39;article.">getStock</a>(){</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> this.qteStock;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="classgestion_commande_1_1_article.html#a67b9ca3be955dd04c9aa3707b65b43c7">   58</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="classgestion_commande_1_1_article.html#a67b9ca3be955dd04c9aa3707b65b43c7" title="Methode permettant de recuperer le prix unitaire de l&#39;article.">getPrixUnitaire</a>(){</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> this.prixUnitaire;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="classgestion_commande_1_1_article.html#a45aef0c035bb11c4be39787f2c9089cd">   65</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classgestion_commande_1_1_article.html#a45aef0c035bb11c4be39787f2c9089cd" title="Methode permettant de recuperer la quantite en stock de l&#39;article.">getStock</a>(){</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> this.qteStock;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="classgestion_commande_1_1_article.html#a93caab60dbfe5335ef0cd11cc7746908">   72</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classgestion_commande_1_1_article.html#a93caab60dbfe5335ef0cd11cc7746908" title="Methode permettant de modifier la quantite en stock de l&#39;article.">changeStock</a>(<span class="keywordtype">int</span> stock){</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        this.qteStock = this.qteStock - stock;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_8509e89b78070883940f0b014b0710e5.html">Rouinsard</a></li><li class="navelem"><a class="el" href="dir_73a21940a05bff378fb490a31d6add59.html">Java</a></li><li class="navelem"><a class="el" href="dir_bd461f54dec76a91f6cf3aa6449e0818.html">Gestion de commandes</a></li><li class="navelem"><a class="el" href="dir_afcaef4a045b5464c5e0bd4552f3ab9c.html">src</a></li><li class="navelem"><a class="el" href="dir_fd67ba2ba5bd327fd632086e3913c246.html">gestionCommande</a></li><li class="navelem"><a class="el" href="_article_8java.html">Article.java</a></li>
-    <li class="footer">Generated on Tue Oct 2 2012 10:57:09 for Gestion de Commande by
+    <li class="navelem"><a class="el" href="dir_3b829bc5cd9d67d7d67f5945b202086a.html">Java</a></li><li class="navelem"><a class="el" href="dir_d58ebbea3761f6dd1a5cdb650738a5de.html">Gestion de commandes</a></li><li class="navelem"><a class="el" href="dir_b8cc8f20b92655ea88a8c8f64b705023.html">src</a></li><li class="navelem"><a class="el" href="dir_90560bcdee7afa8d9b11b363d837eed7.html">gestionCommande</a></li><li class="navelem"><a class="el" href="_article_8java.html">Article.java</a></li>
+    <li class="footer">Generated on Mon Oct 8 2012 12:20:14 for Gestion de Commande by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>

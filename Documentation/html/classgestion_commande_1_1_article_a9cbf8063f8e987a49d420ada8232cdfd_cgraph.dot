@@ -1,0 +1,15 @@
+digraph "gestionCommande.Article.saisirArticle"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="gestionCommande.Article.saisir\lArticle",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="gestionCommande.Lire.S",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_lire.html#a80bc00afc8ee00cdf98d844099184e16"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="gestionCommande.Lire.f",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_lire.html#a007ba2d3004f27d3040f409074aab7f8"];
+  Node3 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="gestionCommande.Lire.i",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_lire.html#a4c849f256ceef5c7d7f025bf7870fea6"];
+  Node4 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

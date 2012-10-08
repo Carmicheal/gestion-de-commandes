@@ -1,0 +1,41 @@
+digraph "gestionCommande.Lire.S"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="gestionCommande.Lire.S",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="gestionCommande.Article.saisir\lArticle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_article.html#a9cbf8063f8e987a49d420ada8232cdfd",tooltip="Methode permettant la saisie d&#39;un article."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="gestionCommande.main.main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1main.html#a0e5d4f61c1ddeb1175043ce260b5ee7e"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="gestionCommande.Client.saisir\lClient",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_client.html#a4321a476e46367fb05288dd404681d18",tooltip="Methode permettant la saisie du client par l&#39;utilisateur."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="gestionCommande.Client.saisir\lAdresse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_client.html#aae19e5e1047008ebc311a60f8bba12ef",tooltip="Methode permettant de saisir uniquement l&#39;adresse du client."];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="gestionCommande.Lire.b",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_lire.html#a594d6557a659d35a7de8f140f090b38c"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="gestionCommande.Lire.s",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_lire.html#a5b17d4c1ebafa4c2f3248e25dc0abfb3"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="gestionCommande.Lire.i",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_lire.html#a4c849f256ceef5c7d7f025bf7870fea6"];
+  Node8 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="gestionCommande.Article.saisir\lPrixUnitaire",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_article.html#aba22b733dd82931721613a0e4338ab9f",tooltip="Methode permettant de saisir le prix a l&#39;unite."];
+  Node9 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="gestionCommande.Lire.l",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_lire.html#ae903197e030dcb46c1b527a3b4e69374"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="gestionCommande.Lire.d",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_lire.html#a4219a16fbeafd478ea01a9528c3bb5bd"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="gestionCommande.Lire.f",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_lire.html#a007ba2d3004f27d3040f409074aab7f8"];
+  Node12 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="gestionCommande.ArticleProduit.saisir\lArticle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_article_produit.html#a4f8d0da086aa398f89f67384b3933de7",tooltip="Methode permettant la saisie d&#39;un nouvel article."];
+  Node13 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="gestionCommande.Lire.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_lire.html#a4b31da4cd5affa5a3c46768572aaccd6"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

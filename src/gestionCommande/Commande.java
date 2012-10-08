@@ -9,9 +9,10 @@ import java.io.Serializable;
  */
 
 public class Commande implements Serializable{
-	private int numCde;
+	private long numCde;
 	private Client leClient;
 	private Article larticle;
+	private int qteCommande;
 	
 	/** \brief Constructeur de la classe commande.
 	 * \details Le constructeur de la classe commande prenant en parametre un numero d'id, un client et un article.
@@ -19,10 +20,11 @@ public class Commande implements Serializable{
 	 * @param cli	Le client effectuant la commande.
 	 * @param art	L'article commandee par le client.
 	 */
-	public Commande(int num, Client cli, Article art){
+	public Commande(long num, Client cli, Article art, int nbCommande){
 		this.numCde = num;
 		this.leClient = cli;
 		this.larticle = art;
+		this.qteCommande = nbCommande;
 	}
 	
 	/** \brief Methode permettant d'afficher la commande.
@@ -37,7 +39,7 @@ public class Commande implements Serializable{
 	/** \brief Methode permettant de recuperer le numero de commande.
 	 * @return this.numCde 	Correspond au numero de la commande.
 	 */
-	public int getNum(){
+	public long getNum(){
 		return this.numCde;
 	}
 	
@@ -53,5 +55,12 @@ public class Commande implements Serializable{
 	 */
 	public Article getArticle(){
 		return this.larticle;
+	}
+	
+	/** \brief Methode permettant de recuperer la quantite commandee.
+	 * @return this.qteCommande		Correspond a la quantite commandee.
+	 */
+	public int getQuantiteCommande(){
+		return this.qteCommande;
 	}
 }

@@ -1,0 +1,43 @@
+digraph "gestionCommande.main.main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="gestionCommande.main.main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="gestionCommande.Lire.i",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_lire.html#a4c849f256ceef5c7d7f025bf7870fea6"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="gestionCommande.Lire.S",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_lire.html#a80bc00afc8ee00cdf98d844099184e16"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="gestionCommande.Client.saisir\lClient",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_client.html#a4321a476e46367fb05288dd404681d18",tooltip="Methode permettant la saisie du client par l&#39;utilisateur."];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="gestionCommande.Client.recherche\lClient",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_client.html#a3c011b7f3d17b2dc4b391533ff9a28ce",tooltip="Methode permettant de rechercher un client dans une collection."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="gestionCommande.Client.saisir\lAdresse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_client.html#aae19e5e1047008ebc311a60f8bba12ef",tooltip="Methode permettant de saisir uniquement l&#39;adresse du client."];
+  Node6 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="gestionCommande.Client.afficher\lClient",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_client.html#a53a0a0f32d6749b1e024d25358df95c2",tooltip="Methode permettant l&#39;affichage du client."];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="gestionCommande.Client.getNom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_client.html#a571b28e84f725329bb1f1d3eaee45559",tooltip="Methode permettant de recuperer le nom du client."];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="gestionCommande.Client.get\lAdresse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_client.html#a3d39bb4646c3127d1e1442a1d5d509b7",tooltip="Methode permettant de recuperer l&#39;adresse du client."];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="gestionCommande.Article.saisir\lArticle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_article.html#a9cbf8063f8e987a49d420ada8232cdfd",tooltip="Methode permettant la saisie d&#39;un article."];
+  Node10 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="gestionCommande.Lire.f",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_lire.html#a007ba2d3004f27d3040f409074aab7f8"];
+  Node11 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="gestionCommande.Article.get\lNomArticle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_article.html#a6206b8fb5eb14b54eefb9cd48ed50ac1",tooltip="Methode permettant de recuperer le nom de l&#39;article."];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="gestionCommande.ArticleProduit.saisir\lArticle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_article_produit.html#a4f8d0da086aa398f89f67384b3933de7",tooltip="Methode permettant la saisie d&#39;un nouvel article."];
+  Node13 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="gestionCommande.Article.saisir\lPrixUnitaire",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_article.html#aba22b733dd82931721613a0e4338ab9f",tooltip="Methode permettant de saisir le prix a l&#39;unite."];
+  Node14 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="gestionCommande.Article.afficher\lArticle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_article.html#a3a5a28348928a6b88b337f46a88026e1",tooltip="Methode permettant d&#39;afficher l&#39;article."];
+}

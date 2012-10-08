@@ -58,11 +58,11 @@ public class main {
 			
 			choixG = Lire.i();
 			switch(choixG){
-				case 1 : int choix;
+				case 1 : int choix; // SOUS-MENU CLIENT
 						do{
 							System.out.println("1- Ajouter un client.");
 							System.out.println("2- Supprimer un client.");
-							System.out.println("3- Modifier l'adresse d'un client.");
+							System.out.println("3- Modifier un client.");
 							System.out.println("4- Rechercher un client.");
 							System.out.println("5- Lister les clients.");
 							System.out.println("0- Quitter.");
@@ -90,8 +90,28 @@ public class main {
 										Client clientX = Client.rechercheClient(unNomX, colClients);
 										if(clientX==null)
 											System.out.println("Client non trouvé.");
-										else
-											clientX.saisirAdresse();
+										else{
+											int choixModificationClient; // SOUS-SOUS-MENU MODIFICATION CLIENT
+											do{
+												System.out.println("1- Modifier l'adresse du client");
+												System.out.println("2- Modifier l'adresse e-mail du client");
+												System.out.println("3- Modifier le numéro de téléphone du client");
+												System.out.println("4- Modifier le numéro de fax du client");
+												System.out.println("0- Quitter");
+											
+												choixModificationClient = Lire.i();
+												switch(choixModificationClient){
+													case 1 : clientX.saisirAdresse();
+															break;
+													case 2 : clientX.saisirMail();
+															break;
+													case 3 : clientX.saisirTel();
+															break;
+													case 4 : clientX.saisirFax();
+															break;
+													}
+												}while(choixModificationClient != 0);
+											}
 										break;
 						
 								case 4 : System.out.println("Saisir le nom du client à rechercher :");
@@ -107,10 +127,6 @@ public class main {
 										clients.afficherClient();
 										}
 										break;
-						
-								case 0 : System.out.println("Au revoir.");
-										break;
-						
 								}
 						}while(choix != 0);
 		
@@ -127,18 +143,19 @@ public class main {
 						break;
 
 		
-				case 2 : int choix2;
+				case 2 : int choix2; // SOUS-MENU ARTICLE
 						do{
 							System.out.println("1- Ajouter un article.");
 							System.out.println("2- Supprimer un article.");
 							System.out.println("3- Modifier le prix unitaire d'un article.");
-							System.out.println("4- Rechercher un article.");
-							System.out.println("5- Lister les articles.");
+							System.out.println("4- Modifier la quantité en stock d'un article.");
+							System.out.println("5- Rechercher un article.");
+							System.out.println("6- Lister les articles.");
 							System.out.println("0- Quitter.");
 							choix2 = Lire.i();
 			
 							switch(choix2){
-								case 1 : int choix3;
+								case 1 : int choix3; // SOUS-SOUS-MENU ARTICLE FABRICATION
 									do{
 										System.out.println("Voulez vous saisir un article acheté ou fabriqué ?");
 										System.out.println("1- Acheté");
@@ -177,8 +194,16 @@ public class main {
 											c.saisirPrixUnitaire();
 										}
 										break;
-					
-								case 4 : System.out.println("Saisir le nom de l'article à rechercher : ");
+										
+								case 4 : System.out.println("Saisir le nom de l'article a modifier : ");
+										String nomArti = Lire.S();
+										if(colArticles.containsKey(nomArti)){
+											Article c1 = colArticles.get(nomArti);
+											c1.saisirQuantite();
+											}
+										break;
+										
+								case 5 : System.out.println("Saisir le nom de l'article à rechercher : ");
 										String nomArticles = Lire.S();
 										if(colArticles.containsKey(nomArticles)){
 											Article c = colArticles.get(nomArticles);
@@ -186,16 +211,13 @@ public class main {
 										}
 										break;
 					
-								case 5 : Set keySet = colArticles.keySet();
+								case 6 : Set keySet = colArticles.keySet();
 										Iterator it=keySet.iterator();
 
 										while (it.hasNext()){
 											Object key=it.next();
 											System.out.println("L'article : "+(String)key+" pour un prix unitaire de "+ colArticles.get(key).getPrixUnitaire() + ", avec un stock de " + colArticles.get(key).getStock());
 										}
-										break;
-					
-								case 0 : System.out.println("Au revoir.");
 										break;
 								}
 						}while(choix2 != 0);
@@ -211,7 +233,7 @@ public class main {
 							e.printStackTrace();
 						}
 						break;
-				case 3 : int choix4;
+				case 3 : int choix4; // SOUS-MENU COMMANDE
 						do{
 							System.out.println("1- Ajouter une commande.");
 							System.out.println("2- Supprimer une commande.");
@@ -233,15 +255,29 @@ public class main {
 
 										while (it.hasNext()){
 											Object key=it.next();
-											System.out.println("L'article : "+(String)key+" pour un prix unitaire de "+ colArticles.get(key).getPrixUnitaire() + ", avec un stock de " + colArticles.get(key).getStock());
+											if(colArticles.get(key).getStock() > 0)
+												System.out.println("L'article : "+(String)key+" pour un prix unitaire de "+ colArticles.get(key).getPrixUnitaire() + ", avec un stock de " + colArticles.get(key).getStock());
+											else
+												System.out.println("L'article " + (String)key + " est en rupture de stock");
 											}
 										String unArti = Lire.S();
 										Article article3 = colArticles.get(unArti);
-					
+										
+										System.out.println("Saisir la quantité devant être commandée :");
+										int quantiteCommande = Lire.i();;
+										if(article3.getStock()-quantiteCommande >= 0)
+											article3.changeStock(quantiteCommande);
+										else{
+											while(article3.getStock()-quantiteCommande < 0){
+											System.out.println("Il ne reste que " + article3.getStock() + " " + article3.getNomArticle() + " , veuillez saisir une nouvelle quantité");
+											quantiteCommande = Lire.i();
+												}
+											}
+										
 										System.out.println("Veuillez choisir un numéro de commande unique.");
-										int nbCommande = Lire.i();
+										long nbCommande = Lire.l();
 					
-										Commande commande1 = new Commande(nbCommande, client3, article3);
+										Commande commande1 = new Commande(nbCommande, client3, article3, quantiteCommande);
 										colCommandes.put(String.valueOf(nbCommande), commande1);
 										break;
 			
@@ -260,10 +296,8 @@ public class main {
 
 										while (itCommande.hasNext()){
 											Object keyCommande=itCommande.next();
-											System.out.println("La commande numéro : " + (String)keyCommande + " dédiée au client " + colCommandes.get(keyCommande).getClient().getNom() + " est une commande de " + colCommandes.get(keyCommande).getArticle().getNomArticle());
+											System.out.println("La commande numéro : " + (String)keyCommande + " dédiée au client " + colCommandes.get(keyCommande).getClient().getNom() + " est une commande de " + colCommandes.get(keyCommande).getQuantiteCommande() + " " + colCommandes.get(keyCommande).getArticle().getNomArticle());
 										}
-										break;
-								case 0 : System.out.println("Au revoir.");
 										break;
 								}
 							}while(choix4!=0);
@@ -277,6 +311,8 @@ public class main {
 						catch(java.io.IOException e){
 							e.printStackTrace();
 							}
+						break;
+				case 0 : System.out.println("Au revoir.");
 						break;
 			}
 	}while(choixG != 0);

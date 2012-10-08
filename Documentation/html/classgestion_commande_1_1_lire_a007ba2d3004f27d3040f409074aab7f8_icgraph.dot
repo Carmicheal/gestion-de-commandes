@@ -1,0 +1,14 @@
+digraph "gestionCommande.Lire.f"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="gestionCommande.Lire.f",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="gestionCommande.Article.saisir\lArticle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_article.html#a9cbf8063f8e987a49d420ada8232cdfd",tooltip="Methode permettant la saisie d&#39;un article."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="gestionCommande.main.main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1main.html#a0e5d4f61c1ddeb1175043ce260b5ee7e"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="gestionCommande.ArticleProduit.saisir\lArticle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgestion_commande_1_1_article_produit.html#a4f8d0da086aa398f89f67384b3933de7",tooltip="Methode permettant la saisie d&#39;un nouvel article."];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

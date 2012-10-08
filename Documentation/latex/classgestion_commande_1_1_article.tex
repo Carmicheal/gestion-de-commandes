@@ -16,12 +16,16 @@ void \hyperlink{classgestion_commande_1_1_article_a3a5a28348928a6b88b337f46a8802
 \begin{DoxyCompactList}\small\item\em Methode permettant d'afficher l'article. \end{DoxyCompactList}\item 
 void \hyperlink{classgestion_commande_1_1_article_aba22b733dd82931721613a0e4338ab9f}{saisir\-Prix\-Unitaire} ()
 \begin{DoxyCompactList}\small\item\em Methode permettant de saisir le prix a l'unite. \end{DoxyCompactList}\item 
+void \hyperlink{classgestion_commande_1_1_article_a51ce07f2587d767cf8d88bdd5fcbcf4f}{saisir\-Quantite} ()
+\begin{DoxyCompactList}\small\item\em Methode permettant de saisir la quantitee en stock de l'article. \end{DoxyCompactList}\item 
 String \hyperlink{classgestion_commande_1_1_article_a6206b8fb5eb14b54eefb9cd48ed50ac1}{get\-Nom\-Article} ()
 \begin{DoxyCompactList}\small\item\em Methode permettant de recuperer le nom de l'article. \end{DoxyCompactList}\item 
 float \hyperlink{classgestion_commande_1_1_article_a67b9ca3be955dd04c9aa3707b65b43c7}{get\-Prix\-Unitaire} ()
 \begin{DoxyCompactList}\small\item\em Methode permettant de recuperer le prix unitaire de l'article. \end{DoxyCompactList}\item 
 int \hyperlink{classgestion_commande_1_1_article_a45aef0c035bb11c4be39787f2c9089cd}{get\-Stock} ()
-\begin{DoxyCompactList}\small\item\em Methode permettant de recuperer la quantite en stock de l'article. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Methode permettant de recuperer la quantite en stock de l'article. \end{DoxyCompactList}\item 
+void \hyperlink{classgestion_commande_1_1_article_a93caab60dbfe5335ef0cd11cc7746908}{change\-Stock} (int stock)
+\begin{DoxyCompactList}\small\item\em Methode permettant de modifier la quantite en stock de l'article. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -50,6 +54,26 @@ Cette methode permet d'afficher le nom, le prix a l'unite et la quantite en stoc
 
 Definition at line 29 of file Article.\-java.
 
+\hypertarget{classgestion_commande_1_1_article_a93caab60dbfe5335ef0cd11cc7746908}{\index{gestion\-Commande\-::\-Article@{gestion\-Commande\-::\-Article}!change\-Stock@{change\-Stock}}
+\index{change\-Stock@{change\-Stock}!gestionCommande::Article@{gestion\-Commande\-::\-Article}}
+\subsubsection[{change\-Stock}]{\setlength{\rightskip}{0pt plus 5cm}void gestion\-Commande.\-Article.\-change\-Stock (
+\begin{DoxyParamCaption}
+\item[{int}]{stock}
+\end{DoxyParamCaption}
+)}}\label{classgestion_commande_1_1_article_a93caab60dbfe5335ef0cd11cc7746908}
+
+
+Methode permettant de modifier la quantite en stock de l'article. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stock} & Correspond au stock a retirer. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 72 of file Article.\-java.
+
 \hypertarget{classgestion_commande_1_1_article_a6206b8fb5eb14b54eefb9cd48ed50ac1}{\index{gestion\-Commande\-::\-Article@{gestion\-Commande\-::\-Article}!get\-Nom\-Article@{get\-Nom\-Article}}
 \index{get\-Nom\-Article@{get\-Nom\-Article}!gestionCommande::Article@{gestion\-Commande\-::\-Article}}
 \subsubsection[{get\-Nom\-Article}]{\setlength{\rightskip}{0pt plus 5cm}String gestion\-Commande.\-Article.\-get\-Nom\-Article (
@@ -66,7 +90,7 @@ this.\-nom\-Article Correspond au nom de l'article.
 \end{DoxyReturn}
 
 
-Definition at line 44 of file Article.\-java.
+Definition at line 51 of file Article.\-java.
 
 \hypertarget{classgestion_commande_1_1_article_a67b9ca3be955dd04c9aa3707b65b43c7}{\index{gestion\-Commande\-::\-Article@{gestion\-Commande\-::\-Article}!get\-Prix\-Unitaire@{get\-Prix\-Unitaire}}
 \index{get\-Prix\-Unitaire@{get\-Prix\-Unitaire}!gestionCommande::Article@{gestion\-Commande\-::\-Article}}
@@ -84,7 +108,7 @@ this.\-prix\-Unitaire Correspond au prix a l'unite de l'article.
 \end{DoxyReturn}
 
 
-Definition at line 51 of file Article.\-java.
+Definition at line 58 of file Article.\-java.
 
 \hypertarget{classgestion_commande_1_1_article_a45aef0c035bb11c4be39787f2c9089cd}{\index{gestion\-Commande\-::\-Article@{gestion\-Commande\-::\-Article}!get\-Stock@{get\-Stock}}
 \index{get\-Stock@{get\-Stock}!gestionCommande::Article@{gestion\-Commande\-::\-Article}}
@@ -102,7 +126,7 @@ this.\-qte\-Stock Correspond a la quantite en stock de l'article.
 \end{DoxyReturn}
 
 
-Definition at line 58 of file Article.\-java.
+Definition at line 65 of file Article.\-java.
 
 \hypertarget{classgestion_commande_1_1_article_a9cbf8063f8e987a49d420ada8232cdfd}{\index{gestion\-Commande\-::\-Article@{gestion\-Commande\-::\-Article}!saisir\-Article@{saisir\-Article}}
 \index{saisir\-Article@{saisir\-Article}!gestionCommande::Article@{gestion\-Commande\-::\-Article}}
@@ -133,6 +157,21 @@ Methode permettant de saisir le prix a l'unite.
 Cette methode sert a faire saisir uniquement le prix a l'unite pour ne pas alterer le nom de l'article ou sa quantite. 
 
 Definition at line 36 of file Article.\-java.
+
+\hypertarget{classgestion_commande_1_1_article_a51ce07f2587d767cf8d88bdd5fcbcf4f}{\index{gestion\-Commande\-::\-Article@{gestion\-Commande\-::\-Article}!saisir\-Quantite@{saisir\-Quantite}}
+\index{saisir\-Quantite@{saisir\-Quantite}!gestionCommande::Article@{gestion\-Commande\-::\-Article}}
+\subsubsection[{saisir\-Quantite}]{\setlength{\rightskip}{0pt plus 5cm}void gestion\-Commande.\-Article.\-saisir\-Quantite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgestion_commande_1_1_article_a51ce07f2587d767cf8d88bdd5fcbcf4f}
+
+
+Methode permettant de saisir la quantitee en stock de l'article. 
+
+
+
+Definition at line 43 of file Article.\-java.
 
 
 

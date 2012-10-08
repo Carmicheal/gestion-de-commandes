@@ -130,6 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aba22b733dd82931721613a0e4338ab9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgestion_commande_1_1_article.html#aba22b733dd82931721613a0e4338ab9f">saisirPrixUnitaire</a> ()</td></tr>
 <tr class="memdesc:aba22b733dd82931721613a0e4338ab9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode permettant de saisir le prix a l'unite.  <a href="#aba22b733dd82931721613a0e4338ab9f"></a><br/></td></tr>
 <tr class="separator:aba22b733dd82931721613a0e4338ab9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ce07f2587d767cf8d88bdd5fcbcf4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgestion_commande_1_1_article.html#a51ce07f2587d767cf8d88bdd5fcbcf4f">saisirQuantite</a> ()</td></tr>
+<tr class="memdesc:a51ce07f2587d767cf8d88bdd5fcbcf4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode permettant de saisir la quantitee en stock de l'article.  <a href="#a51ce07f2587d767cf8d88bdd5fcbcf4f"></a><br/></td></tr>
+<tr class="separator:a51ce07f2587d767cf8d88bdd5fcbcf4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6206b8fb5eb14b54eefb9cd48ed50ac1"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgestion_commande_1_1_article.html#a6206b8fb5eb14b54eefb9cd48ed50ac1">getNomArticle</a> ()</td></tr>
 <tr class="memdesc:a6206b8fb5eb14b54eefb9cd48ed50ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode permettant de recuperer le nom de l'article.  <a href="#a6206b8fb5eb14b54eefb9cd48ed50ac1"></a><br/></td></tr>
 <tr class="separator:a6206b8fb5eb14b54eefb9cd48ed50ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +142,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a45aef0c035bb11c4be39787f2c9089cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgestion_commande_1_1_article.html#a45aef0c035bb11c4be39787f2c9089cd">getStock</a> ()</td></tr>
 <tr class="memdesc:a45aef0c035bb11c4be39787f2c9089cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode permettant de recuperer la quantite en stock de l'article.  <a href="#a45aef0c035bb11c4be39787f2c9089cd"></a><br/></td></tr>
 <tr class="separator:a45aef0c035bb11c4be39787f2c9089cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93caab60dbfe5335ef0cd11cc7746908"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgestion_commande_1_1_article.html#a93caab60dbfe5335ef0cd11cc7746908">changeStock</a> (int stock)</td></tr>
+<tr class="memdesc:a93caab60dbfe5335ef0cd11cc7746908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode permettant de modifier la quantite en stock de l'article.  <a href="#a93caab60dbfe5335ef0cd11cc7746908"></a><br/></td></tr>
+<tr class="separator:a93caab60dbfe5335ef0cd11cc7746908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>La classe <a class="el" href="classgestion_commande_1_1_article.html">Article</a> sert a instancier de nouveaux articles. Les articles sont renseignes par leur nom, leur prix a l'unite et leur quantite en stock. La classe <a class="el" href="classgestion_commande_1_1_article.html">Article</a> implemente l'interface Serializable. </p>
@@ -166,6 +172,32 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a93caab60dbfe5335ef0cd11cc7746908"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gestionCommande.Article.changeStock </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Methode permettant de modifier la quantite en stock de l'article. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stock</td><td>Correspond au stock a retirer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_article_8java_source.html#l00072">72</a> of file <a class="el" href="_article_8java_source.html">Article.java</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a6206b8fb5eb14b54eefb9cd48ed50ac1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -182,7 +214,7 @@ Public Member Functions</h2></td></tr>
 <p>Methode permettant de recuperer le nom de l'article. </p>
 <dl class="section return"><dt>Returns</dt><dd>this.nomArticle Correspond au nom de l'article. </dd></dl>
 
-<p>Definition at line <a class="el" href="_article_8java_source.html#l00044">44</a> of file <a class="el" href="_article_8java_source.html">Article.java</a>.</p>
+<p>Definition at line <a class="el" href="_article_8java_source.html#l00051">51</a> of file <a class="el" href="_article_8java_source.html">Article.java</a>.</p>
 
 </div>
 </div>
@@ -202,7 +234,7 @@ Public Member Functions</h2></td></tr>
 <p>Methode permettant de recuperer le prix unitaire de l'article. </p>
 <dl class="section return"><dt>Returns</dt><dd>this.prixUnitaire Correspond au prix a l'unite de l'article. </dd></dl>
 
-<p>Definition at line <a class="el" href="_article_8java_source.html#l00051">51</a> of file <a class="el" href="_article_8java_source.html">Article.java</a>.</p>
+<p>Definition at line <a class="el" href="_article_8java_source.html#l00058">58</a> of file <a class="el" href="_article_8java_source.html">Article.java</a>.</p>
 
 </div>
 </div>
@@ -222,7 +254,7 @@ Public Member Functions</h2></td></tr>
 <p>Methode permettant de recuperer la quantite en stock de l'article. </p>
 <dl class="section return"><dt>Returns</dt><dd>this.qteStock Correspond a la quantite en stock de l'article. </dd></dl>
 
-<p>Definition at line <a class="el" href="_article_8java_source.html#l00058">58</a> of file <a class="el" href="_article_8java_source.html">Article.java</a>.</p>
+<p>Definition at line <a class="el" href="_article_8java_source.html#l00065">65</a> of file <a class="el" href="_article_8java_source.html">Article.java</a>.</p>
 
 </div>
 </div>
@@ -266,6 +298,25 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a51ce07f2587d767cf8d88bdd5fcbcf4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gestionCommande.Article.saisirQuantite </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Methode permettant de saisir la quantitee en stock de l'article. </p>
+
+<p>Definition at line <a class="el" href="_article_8java_source.html#l00043">43</a> of file <a class="el" href="_article_8java_source.html">Article.java</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Rouinsard/Java/Gestion de commandes/src/gestionCommande/<a class="el" href="_article_8java_source.html">Article.java</a></li>
 </ul>
@@ -275,7 +326,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacegestion_commande.html">gestionCommande</a></li><li class="navelem"><a class="el" href="classgestion_commande_1_1_article.html">Article</a></li>
-    <li class="footer">Generated on Tue Oct 2 2012 10:57:09 for Gestion de Commande by
+    <li class="footer">Generated on Mon Oct 8 2012 12:20:14 for Gestion de Commande by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>

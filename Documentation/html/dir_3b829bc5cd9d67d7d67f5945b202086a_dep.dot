@@ -1,0 +1,10 @@
+digraph "C:/Users/Rouinsard/Java" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_3b829bc5cd9d67d7d67f5945b202086a {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_3b829bc5cd9d67d7d67f5945b202086a.html"];
+    dir_3b829bc5cd9d67d7d67f5945b202086a [shape=plaintext label="Java"];
+    dir_d58ebbea3761f6dd1a5cdb650738a5de [shape=box label="Gestion de commandes" color="red" fillcolor="white" style="filled" URL="dir_d58ebbea3761f6dd1a5cdb650738a5de.html"];
+  }
+}
